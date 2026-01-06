@@ -33,9 +33,10 @@
         "src"
     ],
     "scripts": {
-        "build": "npm run build:ts && npm run build:css",
-        "build:ts": "tsc",
-        "build:css": "postcss src/styles.css -o dist/styles.css",
+        "build": "npm run build:wp && npm run build:types",
+        "build:wp": "wp-scripts build --config webpack.config.js",
+        "build:types": "tsc --emitDeclarationOnly",
+        "start": "wp-scripts start --config webpack.config.js",
         "lint": "eslint src --ext .ts,.tsx",
         "typecheck": "tsc --noEmit",
         "prepare": "npm run build"
