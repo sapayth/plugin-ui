@@ -24,8 +24,13 @@ export {
     // Card
     Card, CardContent, CardDescription, CardFooter, CardHeader,
     CardTitle,
+    // Design system (Figma Design-System-for-Plugin)
+    ComponentPreview, DesignSystemSection,
+    // Currency input (uses InputGroup)
+    CurrencyInput,
     // Input
     Input,
+    InputGroup,
     // Label
     Label,
     // Modal
@@ -51,6 +56,11 @@ export {
     type CardHeaderProps,
     type CardProps,
     type CardTitleProps,
+    type ComponentPreviewProps,
+    type CurrencyInputProps,
+    type CurrencyOption,
+    type DesignSystemSectionProps,
+    type InputGroupProps,
     type InputProps,
     type LabelProps, type ModalProps, type SeparatorProps,
     type SwitchProps,
