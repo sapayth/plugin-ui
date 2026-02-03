@@ -42,6 +42,14 @@ export {
     Switch,
     // Textarea
     Textarea,
+    // Tooltip
+    Tooltip,
+    TooltipContent,
+    TooltipProvider,
+    TooltipTrigger,
+    Toggle,
+    ToggleGroup,
+    ToggleGroupItem,
     // Types
     type AlertProps,
     type AlertVariant,

@@ -54,8 +54,9 @@
         "react-dom": ">=17.0.0"
     },
     "dependencies": {
-        "clsx": "^2.0.0",
-        "tailwind-merge": "^2.0.0"
+        "clsx": "^2.1.1",
+        "tailwind-merge": "^2.6.1",
+        "@base-ui/react": "^1.1.0"
     },
     "devDependencies": {
         "@tailwindcss/postcss": "^4.1.18",
