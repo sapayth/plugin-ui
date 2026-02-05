@@ -47,6 +47,8 @@ export {
     ModalFooter, ModalHeader, ModalOverlay, ModalTitle,
     // Separator
     Separator,
+    // Spinner
+    Spinner,
     // Switch
     Switch,
     // Textarea
@@ -64,9 +66,6 @@ export {
     type AlertVariant,
     type BadgeProps,
     type BadgeVariant,
-    type ButtonProps,
-    type ButtonSize,
-    type ButtonVariant,
     type CardContentProps,
     type CardDescriptionProps,
     type CardFooterProps,
