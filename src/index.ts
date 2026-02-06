@@ -16,7 +16,7 @@ export {
 // ============================================
 export {
     // Alert
-    Alert, AlertDescription, AlertTitle,
+    Alert, AlertDescription, AlertTitle, AlertAction,
     // Badge
     Badge,
     // Breadcrumb
@@ -54,6 +54,8 @@ export {
     // Modal
     Modal, ModalClose, ModalContent, ModalDescription,
     ModalFooter, ModalHeader, ModalOverlay, ModalTitle,
+    // Notice
+    Notice, NoticeTitle, NoticeAction,
     // Separator
     Separator,
     // Spinner
@@ -79,8 +81,6 @@ export {
     SelectionType,
     SelectionItem,
     // Types
-    type AlertProps,
-    type AlertVariant,
     type BadgeProps,
     type BadgeVariant,
     type CardContentProps,
