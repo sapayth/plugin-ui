@@ -16,7 +16,7 @@ export {
 // ============================================
 export {
     // Alert
-    Alert, AlertDescription, AlertTitle,
+    Alert, AlertDescription, AlertTitle, AlertAction,
     // Avatar
     Avatar,
     AvatarImage,
@@ -28,6 +28,14 @@ export {
     Thumbnail, type ThumbnailProps, type ThumbnailSize, type ThumbnailAspect,
     // Badge
     Badge,
+    // Breadcrumb
+    Breadcrumb,
+    BreadcrumbList,
+    BreadcrumbItem,
+    BreadcrumbLink,
+    BreadcrumbPage,
+    BreadcrumbSeparator,
+    BreadcrumbEllipsis,
     // Button
     Button,
     // Card
@@ -40,11 +48,23 @@ export {
     // Input
     Input,
     InputGroup,
+    InputGroupAddon,
+    InputGroupButton,
+    InputGroupInput,
+    InputGroupText,
+    InputGroupTextarea,
+    // Input OTP
+    InputOTP,
+    InputOTPGroup,
+    InputOTPSeparator,
+    InputOTPSlot,
     // Label
     Label,
     // Modal
     Modal, ModalClose, ModalContent, ModalDescription,
     ModalFooter, ModalHeader, ModalOverlay, ModalTitle,
+    // Notice
+    Notice, NoticeTitle, NoticeAction,
     // Separator
     Separator,
     // Spinner
@@ -61,9 +81,15 @@ export {
     Toggle,
     ToggleGroup,
     ToggleGroupItem,
+    // Tabs
+    Tabs,
+    TabsList,
+    TabsTrigger,
+    TabsContent,
+    // Selection Type
+    SelectionType,
+    SelectionItem,
     // Types
-    type AlertProps,
-    type AlertVariant,
     type BadgeProps,
     type BadgeVariant,
     type CardContentProps,
@@ -76,11 +102,8 @@ export {
     type CurrencyInputProps,
     type CurrencyOption,
     type DesignSystemSectionProps,
-    type InputGroupProps,
-    type InputProps,
     type LabelProps, type ModalProps, type SeparatorProps,
-    type SwitchProps,
-    type TextareaProps
+    type SwitchProps
 } from "./components/ui";
 
 // ============================================
