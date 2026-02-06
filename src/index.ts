@@ -62,6 +62,14 @@ export {
     Toggle,
     ToggleGroup,
     ToggleGroupItem,
+    // Tabs
+    Tabs,
+    TabsList,
+    TabsTrigger,
+    TabsContent,
+    // Selection Type
+    SelectionType,
+    SelectionItem,
     // Types
     type AlertProps,
     type AlertVariant,
