@@ -8,6 +8,7 @@ import {
 } from "react";
 import { createPortal } from "react-dom";
 import { cn } from "@/lib/utils";
+import { getThemeStyles, useThemeOptional } from "@/providers";
 
 /* ============================================
    Modal Overlay
@@ -297,6 +298,7 @@ export function Modal({
   className,
   size = "default",
 }: ModalProps) {
+  const theme = useThemeOptional();
   const [portalContainer, setPortalContainer] = useState<HTMLElement | null>(
     null,
   );
@@ -329,6 +331,21 @@ export function Modal({
       }
     };
   }, [open]);
+
+  useEffect(() => {
+    if (!portalContainer || !theme) return;
+
+    const styles = getThemeStyles(theme.tokens);
+    Object.entries(styles).forEach(([key, value]) => {
+      portalContainer.style.setProperty(key, value);
+    });
+    portalContainer.setAttribute("data-pui-mode", theme.resolvedMode);
+    if (theme.resolvedMode === "dark") {
+      portalContainer.classList.add("dark");
+    } else {
+      portalContainer.classList.remove("dark");
+    }
+  }, [portalContainer, theme]);
 
   // Handle escape key
   useEffect(() => {
