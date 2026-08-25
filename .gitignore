@@ -6,4 +6,4 @@ storybook-static
 
 debug-storybook.log
 
-config.bat
+.env
