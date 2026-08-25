@@ -46,12 +46,12 @@
     "src"
   ],
   "scripts": {
-    "build": "npm run build:wp && npm run build:types",
-    "build:wp": "wp-scripts build --progress",
-    "build:types": "tsc --emitDeclarationOnly",
-    "start": "wp-scripts start --progress",
+    "build": "node init && npm run build:wp && npm run build:types",
+    "build:wp": "node init && wp-scripts build --progress",
+    "build:types": "node init && tsc --emitDeclarationOnly",
+    "start": "node init && wp-scripts start --progress",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build",
+    "build-storybook": "node init && storybook build",
     "lint": "eslint src --ext .ts,.tsx",
     "typecheck": "tsc --noEmit",
     "prepare": "npm run build"
