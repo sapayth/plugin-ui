@@ -4,4 +4,4 @@ package-lock.json
 
 /dist
 
-config.bat
+.env
